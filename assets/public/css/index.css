@@ -2152,6 +2152,9 @@ width: 100%;*/
     }
 }
 @media screen and (max-width: 767px) and (min-width: 0px) {
+    .pad5-xs{
+        padding: 5px;
+    }
     .collapse.in {
         margin-top: 0px;
     }
