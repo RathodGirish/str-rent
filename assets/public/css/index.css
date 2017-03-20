@@ -80,6 +80,10 @@ width: 100%;*/
 .navbar-nav > li > a {
     padding: 8px 10px 0 10px;
 }
+
+.navbar-nav > li.active > a{
+    color: #333 !important;
+}
 .dropdown:hover .dropdown-menu {
     /*display: block;*/
 }
@@ -295,6 +299,14 @@ li {
     color: #fff;
 }
 #matchingList {
+   /* position: absolute;
+    left: -60px;
+    z-index: 2;
+    background: transparent;
+    color: #fff;
+    bottom: 0px !important;
+    border-bottom: 95px solid #463082;
+    border-right: 95px solid transparent;*/
     position: absolute;
     background-color: #463082;
     bottom: 35px;
@@ -627,6 +639,42 @@ li {
 .toggleValue.Active {
     left: 10px;
 }
+
+.bigToggle .toggleValue.Active{
+    left: 20px;
+    top: 5px;
+}
+
+.bigToggle .toggleValue {
+    top: 5px;
+    font-size: 11px;
+}
+
+.bigToggle.toggle .handle{
+    width: 100px;
+    height: 23px;
+    font-size: 11px;
+}
+
+.bigToggle.toggle input[type="checkbox"]:checked + .handle:before,
+.bigToggle.toggle input[type="radio"]:checked + .handle:before {
+    width: 105px;
+    height: 23px;
+}
+
+.bigToggle.toggle input[type="checkbox"]:checked + .handle:after,
+.bigToggle.toggle input[type="radio"]:checked + .handle:after {
+    left: 83px;
+}
+
+.bigToggle.toggle .handle:before,
+.bigToggle.toggle .handle:after {
+    height: 15px;
+    width: 14px;
+    top: 3.5px;
+    left: 3px;
+}
+
 .activateDiv {
     top: 12px;
 }
@@ -1540,6 +1588,9 @@ input::-webkit-inner-spin-button {
 .borderless th {
     border: none !important;
 }
+.mrg0 {
+    margin: 0px !important;
+}
 .mrg15 {
     margin: 15px;
 }
@@ -1582,6 +1633,21 @@ input::-webkit-inner-spin-button {
 .pad0 {
     padding: 0px !important;
 }
+.pad3{
+    padding: 3px !important;
+}
+.pad5 {
+    padding: 5px !important;
+}
+.pad10 {
+    padding: 10px !important;
+}
+.pad15 {
+    padding: 15px !important;
+}
+.pad20 {
+    padding: 20px !important;
+}
 .padT7 {
     padding-top: 7px !important;
 }
@@ -1602,6 +1668,9 @@ input::-webkit-inner-spin-button {
 }
 .fs15 {
     font-size: 15px !important;
+}
+.fs20 {
+    font-size: 20px !important;
 }
 .br0 {
     border-radius: 0px !important;
@@ -2234,7 +2303,7 @@ width: 100%;*/
     }
 
     li.unAuthMenus{
-        background-color: #A349A4;
+        background-color: #463082;
     }
 
     .homeToListRentals{
@@ -2270,7 +2339,7 @@ width: 100%;*/
         margin-right: 5px;
     }
     .col-sm-12 hr {
-        margin: 10px 0px;
+        margin: 5px 0px;
     }
     
     .table-thumb {
@@ -2330,6 +2399,9 @@ width: 100%;*/
         /*left: 30%;*/
         position: absolute;
         /*margin-top: 8px;*/
+        padding: 0px 10px;
+        background-color: #30215C;
+        height: 34px;
     }
     .propertyListTopSec{
         top: 12px;
@@ -2394,6 +2466,10 @@ width: 100%;*/
 
     #propertyDetailMapDiv sebm-google-map{
         height: 177px;
+    }
+
+    .ngxmdp .headertodaybtn{
+        display: none !important;
     }
 }
 @media screen and (max-width: 500px) and (min-width: 0px) {
