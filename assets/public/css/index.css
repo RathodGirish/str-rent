@@ -2355,6 +2355,10 @@ width: 100%;*/
     .infowindow-caption{
         left: 12.5%;
     }*/
+
+    .closeWindowButton {
+        padding: 5px 10px;
+    }
     .search-top {
         left: 18%;
         width: 48%;
@@ -2473,6 +2477,10 @@ width: 100%;*/
 
     .ngxmdp .headertodaybtn{
         display: none !important;
+    }
+
+    .popover-infowindow { 
+        margin-top: 240px !important; 
     }
 }
 @media screen and (max-width: 500px) and (min-width: 0px) {
