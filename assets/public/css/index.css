@@ -367,13 +367,9 @@ li {
 #searchPropertyListing .thumbnail {
     padding: 0;
     margin-bottom: 5px;
-    object-fit: none;
-    border: 1px solid #ddd !important;
-    /* Do not scale the image */
-    
+    object-fit: cover;
     object-position: center;
-    /* Center the image within the element */
-    
+    border: 1px solid #ddd !important;
     height: 95px;
     width: 100%;
 }
@@ -389,6 +385,8 @@ li {
     height: 350px;
     margin: 0 auto;
     vertical-align: middle;
+    object-fit: cover;
+    object-position: center;
 }
 
 .gm-style-iw > div {
@@ -1006,7 +1004,8 @@ ul.topnav1 li.icon {
     min-width: 105px;
     margin: 0 auto;
     /*width: 150px;*/
-    
+    object-position: center;
+    object-fit: cover;
     max-width: 100%;
     vertical-align: middle;
     display: block;
@@ -1276,6 +1275,7 @@ div.pac-container {
 .dz-details img {
     max-width: 107px;
     height: 100px;
+    object-fit: cover;
     border-radius: 20px;
 }
 .dz-message span{
@@ -1761,6 +1761,8 @@ input::-webkit-inner-spin-button {
     height: 166px !important;
     padding: 0 !important;
     width: 100%;
+    object-position: center;
+    object-fit: cover;
 }
 .gm-style div:not(.infowindow-arrow-down) {
     background-color: #fff !important;
@@ -2312,6 +2314,7 @@ width: 100%;*/
     #morefilter {
         margin-top: 0px !important;
         background-color: #DDDDDD;
+        height: 390px !important;
     }
     
     #propertyDetail .thumbnail,
