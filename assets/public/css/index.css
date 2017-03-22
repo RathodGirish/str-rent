@@ -381,12 +381,19 @@ li {
     font-size: 12px !important;
 }
 .item-block #property-slider img {
-    width: auto;
+    /*width: auto;
     height: 350px;
     margin: 0 auto;
     vertical-align: middle;
     object-fit: cover;
-    object-position: center;
+    object-position: center;*/
+    height: auto;
+    margin: auto !important;
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center center;
+    vertical-align: middle;
+    width: auto;
 }
 
 .gm-style-iw > div {
