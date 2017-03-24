@@ -455,6 +455,10 @@ li {
     border-color: #463082;
     margin: 10px 0;
 }
+.infowindowBreak hr {
+    border: none;
+    margin: 10px 0 5px;
+}
 .lightgray {
     border-color: lightgray !important;
 }
