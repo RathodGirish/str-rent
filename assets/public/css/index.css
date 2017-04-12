@@ -525,7 +525,7 @@ li {
     background: none;
     border: none;
     font-family: 'MontserratRegular';
-    font-size: 16px;
+    /*font-size: 16px;*/
     word-break: break-word;
     white-space: pre-line;
     display: inline-flex;
@@ -1700,6 +1700,16 @@ input::-webkit-inner-spin-button {
 
 .text-align-center{
     text-align: center;
+    border-color: #463082 !important; 
+}
+
+.text-align-center::placeholder{
+    color: #463082 !important; 
+}
+
+.badge{
+    letter-spacing: 1px;
+    margin-right: 1px;
 }
 
 .btnsetview {
@@ -1920,15 +1930,12 @@ ngb-datepicker {
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
     font-size: 12px;
 }
-.prop-fac-div img {
-    width: 40px;
+.prop-fac-div img, .prop-rent-include-div img {
+    width: 45px;
     display: inline;
     margin-left: 10px;
 }
-.prop-fac-div span {
-    /*margin-top: 2px;
-  font-size: 12px;*/
-}
+
 .top-form-group {
     left: 32%;
     position: absolute;
@@ -2195,9 +2202,10 @@ multiselect .dropdown-menu > li > a i {
     }
 }
 @media screen and (max-width: 1200px) and (min-width: 0px) {
-    .prop-fac-div img {
-        width: 35px;
+    .prop-fac-div img, .prop-rent-include-div img {
+        width: 40px;
     }
+    
     #search-input {
         width: 300px;
     }
@@ -2268,6 +2276,9 @@ width: 100%;*/
     .pad10-xs{
         padding: 10px;
     }
+    .mrg0-xs{
+        margin: 0px;
+    }
     .collapse.in {
         margin-top: 0px;
     }
@@ -2333,9 +2344,6 @@ width: 100%;*/
         background-color: #463082;
     }
 
-    .homeToListRentals{
-
-    }
     #morefilter {
         margin-top: 0px !important;
         background-color: #DDDDDD;
@@ -2364,7 +2372,7 @@ width: 100%;*/
     }
 
     .prop-fac-div img {
-        width: 25px;
+        width: 32px;
         margin-right: 5px;
     }
     .col-sm-12 hr {
@@ -2478,7 +2486,7 @@ width: 100%;*/
         padding: 4px 5px !important;
     }
     .price {
-        font-size: 14px;
+        font-size: 20px;
     }
     .block .price {
         font-size: 24px;
@@ -2551,9 +2559,22 @@ width: 100%;*/
     .navbar-toggle {
         padding: 9px 4px;
     }
+    .title-1 {
+        font-size: 18px;
+    }
+    .title-2 {
+        font-size: 16px;
+    }
     .title-3 {
         font-size: 14px;
     }
+    .title-4 {
+        font-size: 12px;
+    }
+    .title-5 {
+        font-size: 10px;
+    }
+
     h2 {
         font-size: 24px;
     }
@@ -2590,7 +2611,12 @@ width: 100%;*/
         left: 27%;
     }
     .prop-fac-div img {
-        width: 20px;
+        width: 25px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .prop-rent-include-div img{
+        width: 32px;
         margin-right: 0px;
         margin-left: 0px;
     }
@@ -2607,6 +2633,34 @@ width: 100%;*/
     }
     .managePropertyTopSec{
         font-size: 12px !important;
+    }
+
+    .address-text-overflow{
+        max-width: 150px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .toggle .handle:before,
+    .toggle .handle:after {
+        height: 20px !important;
+    }
+
+    #propertyDetail .handle{
+        top: -24px;
+    }
+
+    .toggleValue{
+        top: 9px !important;
+    }
+
+    .toggle .handle{
+        height: 30px !important;
+    }
+
+    .toggle input[type="checkbox"]:checked + .handle:before,
+    .toggle input[type="radio"]:checked + .handle:before {
+        height: 30px !important;
     }
     
 }
