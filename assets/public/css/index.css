@@ -77,9 +77,9 @@ width: 100%;*/
     padding-right: 0px;
     box-shadow: 2px 2px 8px #333;
 }
-.navbar-nav > li > a {
+/*.navbar-nav > li > a {
     padding: 8px 10px 0 10px;
-}
+}*/
 
 .navbar-nav > li.active > a{
     color: #333 !important;
@@ -550,6 +550,13 @@ li {
 /*#googlemap .gmnoprint{
     display: none;
 }*/
+.gm-style > div:nth-child(9){
+ display:none !important;
+}
+
+.gm-fullscreen-control {
+  display: none;
+}
 #currentUser {
     /*width: 110px;
   overflow:hidden; 
@@ -711,6 +718,9 @@ li {
 .modal-footer .toggle.btn-danger {
     background-color: #c9302c;
     border-color: #c9302c;
+}
+.modal {
+    overflow-y: scroll;
 }
 # {
     position: relative;
@@ -1625,6 +1635,9 @@ input::-webkit-inner-spin-button {
 .mrgR10 {
     margin-right: 10px;
 }
+.mrgT2 {
+    margin-top: 2px;
+}
 .mrgT5 {
     margin-top: 5px;
 }
@@ -1700,7 +1713,10 @@ input::-webkit-inner-spin-button {
 
 .text-align-center{
     text-align: center;
-    border-color: #463082 !important; 
+}
+
+.blue-border{
+    border: 1px solid #463082 !important; 
 }
 
 .text-align-center::placeholder{
@@ -2412,7 +2428,7 @@ width: 100%;*/
     }
     #searchPropertyListing {
         position: absolute;
-        top: 70px;
+        top: 60px;
         /*overflow: hidden;*/
     }
     .block .blockImg {
@@ -2480,8 +2496,6 @@ width: 100%;*/
     .goToContactButton{
         margin-left: 138px;
     }
-    .backToListButton{
-    }
     .btn-pad-override {
         padding: 4px 5px !important;
     }
@@ -2513,6 +2527,12 @@ width: 100%;*/
 
     #Tabs {
         left: 33%;
+        height: 28px !important;
+    }
+
+    #Tabs button {
+        padding: 6px !important;
+        font-size: 10px;
     }
 
     #propertyDetailMapDiv sebm-google-map{
@@ -2601,14 +2621,14 @@ width: 100%;*/
         font-size: 12px;
     }
     #searchPropertyListing {
-        top: 70px;
+        top: 60px;
     }
     .customeText .form-control,
     .customeNumber .form-control {
         width: 75px;
     }
     #Tabs {
-        left: 27%;
+        left: 33%;
     }
     .prop-fac-div img {
         width: 25px;
