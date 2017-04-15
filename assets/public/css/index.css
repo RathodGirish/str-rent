@@ -225,6 +225,10 @@ input[type=password] {
     color: #800080 !important;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .pnl-heading {
     background-color: #463082;
     width: 100%;
@@ -370,7 +374,7 @@ li {
     object-fit: cover;
     object-position: center;
     border: 1px solid #ddd !important;
-    height: 95px;
+    height: 110px;
     width: 100%;
 }
 /*.item-block .glyphicon, #myRentalList .glyphicon{
@@ -429,6 +433,9 @@ li {
     background-image: none;
     background-repeat: no-repeat;
 }
+.carousel-control .glyphicon-chevron-right, .carousel-control .glyphicon-chevron-left{
+    background-color: #fff;
+}
 .block .blockImg {
     height: 88px;
     margin: 0 auto !important;
@@ -445,7 +452,7 @@ li {
 .list_rental_block .phone {
     color: #000;
 }
-.list_rental_block .listedDate{
+.list_rental_block .listedDate, .list_rental_block .address{
     color: #a9a9a9;
 }
 .list_rental_block p {
@@ -468,7 +475,7 @@ li {
     font-size: 12px;
     float: left;
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     display: inline-block;
     width: 100%;
     white-space: nowrap;
@@ -476,7 +483,21 @@ li {
     text-overflow: ellipsis;
     /*font-weight: bold;*/
     
-    font-family: 'AvenirLight', arial, serif;
+    /*font-family: 'AvenirLight', arial, serif;*/
+}
+.block .title{
+    font-size: 14px;
+    margin-bottom: 4px;
+    /*display: inline-block;*/
+    width: 100%;
+    /*white-space: nowrap;*/
+    overflow: hidden !important;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 30px;
 }
 .title-1 {
     font-size: 21px;
@@ -2062,7 +2083,8 @@ width: 55px;*/
     margin-top: 55px;
 }
 .carousel-indicators {
-    bottom: 0px;
+    bottom: -5px;
+    margin-bottom: 1px;
 }
 .carousel-indicators li,
 .carousel-indicators .active {
@@ -2245,9 +2267,9 @@ multiselect .dropdown-menu > li > a i {
     }
     .navbar-brand > img {
         /*height: 220%;
-padding: 0px;
-width: 100%;*/
-        
+        padding: 0px;
+        width: 100%;*/
+                
         height: 30px;
     }
     .listRentalFreeLi span,
@@ -2291,6 +2313,12 @@ width: 100%;*/
     }
     .pad10-xs{
         padding: 10px;
+    }
+    .padT0-xs{
+        padding-top: 0px;
+    }
+    .padL5-xs{
+        padding: 1px 0px 1px 15px;
     }
     .mrg0-xs{
         margin: 0px;
@@ -2474,7 +2502,7 @@ width: 100%;*/
 
         height: auto;
         margin: auto !important;
-        max-height: 177px;
+        max-height: 250px;
         object-fit: cover;
         object-position: center center;
         width: auto;
@@ -2529,7 +2557,31 @@ width: 100%;*/
         font-size: 24px;
         margin-top: 0px;
     }
+
+    .block .title{
+        font-size: 14px;
+        margin-bottom: 4px;
+        /*display: inline-block;*/
+        width: 100%;
+        /*white-space: nowrap;*/
+        overflow: hidden !important;
+        overflow-wrap: break-word;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        height: 30px;
+    }
+
+    .block .listedDate{
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
     
+    #searchPropertyListing .thumbnail {
+        height: 100px;
+    }
+
     .modal-body{
         padding: 20px;
     }
@@ -2645,6 +2697,8 @@ width: 100%;*/
     }
     #searchPropertyListing {
         top: 60px;
+        padding: 5px 1px 5px 0px;
+        margin: 0px 0px 8px 8px;
     }
     .customeText .form-control,
     .customeNumber .form-control {
