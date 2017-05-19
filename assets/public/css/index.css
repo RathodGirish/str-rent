@@ -151,7 +151,7 @@ body {
     font-family: 'MontserratRegular', arial, serif;
 }
 .font-montserrat {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat' !important;
 }
 .font-aveneair-light {
     font-family: 'AvenirLight', arial, serif;
@@ -1399,7 +1399,7 @@ div.pac-container {
     border-radius: 20px;
 }
 .dz-message span{
-    font-size: 16px;
+    font-size: 12px;
 }
 #dropzoneFileUpload .glyphicon-remove {
     background: #fff none repeat scroll 0 0;
